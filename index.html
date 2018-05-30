@@ -1,15 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
+	<!-- Material conocido-->
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+	<!-- Bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- Custom css -->
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title> NYU </title>
 </head>
+
+
+
 <body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
-    </div>
-    <script src="index.js"></script>
+	<div class="container-fluid">
+
+		<!-- creo una barra horizontal semitransparente que contendrá el titulo de la pagína -->
+		<div class="row">
+			<div class="col-md-12">
+				<div id="barracabecera">
+					<div id="textocabecera">
+						<h1>District near the NYU Stern School of Business</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- creo una barra horizontal semitransparente que contendrá el menú de navegación de la pagína -->
+		<div class="row">
+			<div class="col-md-12">
+				<div id="barramenu">
+					<div id="menu">
+						<div class="botones">
+							<a href="index.html"> <button class="boton" id="botonselc">Index</button> </a>
+							<a href=""> <button class="boton">boton 1 </button> </a>
+							<a href=""> <button class="boton">boton 2</button> </a>
+							<a href=""> <button class="boton">boton 3</button> </a>
+							<a href=""> <button class="boton">boton 4</button> </a>
+							<a href=""> <button class="boton">boton 5</button> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- creo un titulo para la página de color naranja y con dos imágenes a los lados-->
+		<div class="row">
+			<div class="col-md-12">
+				<div id="contenido" align="center">
+					<div id="titular">
+						<div id="antes">
+							<img class="imagentitulo" src="https://lh3.googleusercontent.com/-PdDMLLS-_xQuXOJzNFQjr-yjZf7F9NK_v5o5DubU-Gry0sp3OxCpCGrqEtuAWijguZDbYgBQPV-ABTNtdpqKCkvIRfRRo4TtzybBljBvxaSSfs5xAKGdw9tjo-u7k9oXK3AKIKi2BwdB7HQj9Cr9dnpmleeOtvMhZilWxX6UQyHfD6rhzfKSPrrHMsf2Ed5Y1X0jYxWB8c8d_XcFHG7XqQ1a1Obl4ekzhSO06UrCcxskigQ9A8EI1MsHBq5YOV9hq9gOR8klAb6wWQp0Xz5f2xOYQOBrjpq-0IChoY6YmsPqad88VR0SlXPjt7Pfk4J38MnsXmV1yrlXXFuA49nhz9qm33ONJgPDpApU3ofUKlsAqS663MTBdDWeN1g3HqpIRsPzGBxe81QcRa63ufH_xKJ1wXCJZu-OnbL6YWT4bhRgVoa5imzRCiLIe0WAv5s6CiGvJwCTp19Yv5QomSQie4kaWk9XAHov2BBdI3I8vwB6vJAYDn0a26ioY0LBFkwaDVTk-5RqFg3rkpFj8QoRMU3SRA2h1eyFJC5uIv6pV5_poqPlnr66WFbgmH5n07Jkj15G7OfK9steKtx6llK6_vcB8e_vni9NblSeyVkPvyHYDlptmTHVdRPZ4hn2aeruTJZnM2op9Hupz7eLrlKLSs4LA6pf8HA=w18-h57-no">
+						</div>
+
+						<div id="titulo">
+							<h2 class="textotitulo">Map</h2>
+						</div>
+
+						<div id="despues">
+							<img class="imagentitulo" src="https://lh3.googleusercontent.com/d4x5vDT6oevXLNXZHGW9iXsnsgTW0ao2xXzUnJeQIQG4LJxXThidh8NJUNKttrKazLD3ttoQYqkBgaGr6aVUlbyF3Y2ZhIdrZ72bKVswcdAMwJ5ESmwB2luGAd5abI9pZ59lB4v4kYhRsPICnDUcHrZGQcsCvmovNMzBNxldlRR7U_FgSlh-otUwGRvkZkwvoL8_BTkEW5t-xLHdi6AzJj4anbyaANGqAP23xnSBdvu7rREvO46mP3fLGbZNrV9xMhPinUgZjhgm9G_HS589VGyiobSFRgGWDkYooys8g0_gqV0Cjz-7ZyZvjorzgdap2NFhCCk_JzRziBYSNQFFQkpo-x6Hsd5qtb9C2g1WAVoVfAARWmS7obVi398raa7Fw9_t07IDQz6W4DkwyBa0-hJNwUsbiJtegZdYjRl3x8rM3FrQX0YktkbJvfOIpgygt7Fp_-fM5RzYfCRuUX-yJ-DkZ4spCt7Xkb5I9HRaOBTCk9lWOLYGEW76MaCiFAV-HHvOZ742LjajCNKI9gyhWq7T3RK5iWwKo3PJL3T98iF6H3UzrhRp3oXRcm8cLggYw3A7WLZFDEBry9L2VDQcZ3_V8rLCZw4Og_y_jhx6hiFJmw09Dx75D7lt1yR61JUWERLE1SqRbzmaEDILK47zORShQvrzv8FE=w18-h57-no">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- creo un mapa con espacio a los dos lados-->
+		<div class="row">
+			<div class="col-md-2">
+			</div>
+
+			<div class="col-md-8">
+				<div id="mapa">
+					<div id="googleMapContainer"></div>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<button id="Markers"> markers </button>
+			</div>
+		</div>
+	</div>
+
+		<!-- Jquery -->
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	  <!-- d3.j -->
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+		<!-- Custom js -->
+	<script type="text/javascript" src="main.js"></script>
+		<!-- Google Map -->
+   <script async defer
+	 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD6adZBEVTH7r7qCUWbkFYelq4kmWbmXI&callback=onGoogleMapResponse">
+	</script>
 </body>
 </html>
